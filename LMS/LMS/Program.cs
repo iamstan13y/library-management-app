@@ -1,6 +1,6 @@
 namespace LMS
 {
-    internal static class Program
+    public static class Program
     {
         [STAThread]
         static void Main()

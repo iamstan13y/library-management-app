@@ -28,9 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblLoading = new System.Windows.Forms.Label();
+            this.tmrLoad = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // label3
@@ -69,12 +72,31 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Library Management System";
             // 
+            // lblLoading
+            // 
+            this.lblLoading.AutoSize = true;
+            this.lblLoading.BackColor = System.Drawing.Color.Transparent;
+            this.lblLoading.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblLoading.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblLoading.Location = new System.Drawing.Point(323, 343);
+            this.lblLoading.Name = "lblLoading";
+            this.lblLoading.Size = new System.Drawing.Size(141, 15);
+            this.lblLoading.TabIndex = 6;
+            this.lblLoading.Text = "Loading, Please wait";
+            // 
+            // tmrLoad
+            // 
+            this.tmrLoad.Enabled = true;
+            this.tmrLoad.Interval = 1000;
+            this.tmrLoad.Tick += new System.EventHandler(this.TmrLoad_Tick);
+            // 
             // SplashScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblLoading);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -91,5 +113,7 @@
         private Label label3;
         private Label label2;
         private Label label1;
+        private Label lblLoading;
+        private System.Windows.Forms.Timer tmrLoad;
     }
 }

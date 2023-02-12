@@ -33,8 +33,7 @@ namespace LMS
                 Db.Command = new SQLiteCommand("SELECT * FROM [Accounts] WHERE [Username]='" + Username + "' AND [Password]='" + Password + "'", Db.Connection);
                 Db.DataReader = Db.Command.ExecuteReader();
 
-                if (Db.DataReader.Read())
-                    return true;
+                if (Db.DataReader.Read()) return true;
                 return false;
             }
             catch(Exception ex)

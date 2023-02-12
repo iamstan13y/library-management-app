@@ -11,7 +11,7 @@ namespace LMS
             InitializeComponent();
         }
 
-        private void LoadStats(Label label, string status)
+        private static void LoadStats(Label label, string status)
         {
             Db.Connection.Open();
             Db.Command = new SQLiteCommand("SELECT COUNT() FROM [Books] WHERE [Status]='"+ status +"'", Db.Connection);
@@ -46,6 +46,13 @@ namespace LMS
                 i++;
             });
 
+        }
+
+        private void BtnViewBooks_Click(object sender, EventArgs e)
+        {
+            BooksPage booksPage = new();
+            booksPage.Show();
+            Close();
         }
     }
 }

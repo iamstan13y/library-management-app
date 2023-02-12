@@ -22,7 +22,7 @@
                 LoginForm loginForm = new();
                 loginForm.Show();
                 tmrLoad.Stop();
-                Close();
+                Hide();
             }
         }
     }

@@ -35,7 +35,7 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.lblLostBooks = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnViewBooks = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -123,16 +123,17 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Admin Dashboard";
             // 
-            // btnCancel
+            // btnViewBooks
             // 
-            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnCancel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCancel.Location = new System.Drawing.Point(77, 254);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(132, 80);
-            this.btnCancel.TabIndex = 12;
-            this.btnCancel.Text = "View Books";
-            this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnViewBooks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnViewBooks.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnViewBooks.Location = new System.Drawing.Point(77, 254);
+            this.btnViewBooks.Name = "btnViewBooks";
+            this.btnViewBooks.Size = new System.Drawing.Size(132, 80);
+            this.btnViewBooks.TabIndex = 12;
+            this.btnViewBooks.Text = "View Books";
+            this.btnViewBooks.UseVisualStyleBackColor = false;
+            this.btnViewBooks.Click += new System.EventHandler(this.BtnViewBooks_Click);
             // 
             // button1
             // 
@@ -151,7 +152,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(809, 461);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnViewBooks);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -181,7 +182,7 @@
         private GroupBox groupBox3;
         private Label lblLostBooks;
         private Label label1;
-        private Button btnCancel;
+        private Button btnViewBooks;
         private Button button1;
     }
 }

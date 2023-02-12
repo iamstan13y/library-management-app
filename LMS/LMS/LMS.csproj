@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <Reference Include="System.Data.SQLite">
-      <HintPath>..\..\..\..\..\..\Desktop\System.Data.SQLite.dll</HintPath>
+      <HintPath>..\..\..\..\..\church-admin-system\CMS\bin\Debug\System.Data.SQLite.dll</HintPath>
     </Reference>
   </ItemGroup>
 

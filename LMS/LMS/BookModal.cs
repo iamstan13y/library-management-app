@@ -48,5 +48,10 @@ namespace LMS
                 Db.Command!.Dispose();
             }
         }
+
+        private void BtnCancel_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

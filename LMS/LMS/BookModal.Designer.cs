@@ -62,7 +62,6 @@
             this.txtCategory.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtCategory.Location = new System.Drawing.Point(106, 166);
             this.txtCategory.Name = "txtCategory";
-            this.txtCategory.PasswordChar = '•';
             this.txtCategory.Size = new System.Drawing.Size(215, 26);
             this.txtCategory.TabIndex = 11;
             // 
@@ -107,7 +106,6 @@
             this.txtISBN.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtISBN.Location = new System.Drawing.Point(106, 271);
             this.txtISBN.Name = "txtISBN";
-            this.txtISBN.PasswordChar = '•';
             this.txtISBN.Size = new System.Drawing.Size(215, 26);
             this.txtISBN.TabIndex = 15;
             // 
@@ -177,6 +175,7 @@
             this.btnCancel.TabIndex = 22;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
             // label5
             // 
@@ -210,7 +209,6 @@
             this.Controls.Add(this.txtTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BookModal";
-            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BookModal";
             this.ResumeLayout(false);

@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using LMS.Utility;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.Data.SQLite;
 
 namespace LMS
 {
@@ -15,6 +9,20 @@ namespace LMS
         public BooksPage()
         {
             InitializeComponent();
+        }
+
+        private void BooksPage_Load(object sender, EventArgs e)
+        {
+            LoadBooks();
+        }
+
+        private void LoadBooks()
+        {
+            Db.Command = new SQLiteCommand("SELECT * FROM [Books]", Db.Connection);
+            Db.Adapter = new SQLiteDataAdapter(Db.Command);
+            DataTable table = new DataTable();
+            Db.Adapter.Fill(table);
+            dgvBooks.DataSource = table;
         }
     }
 }

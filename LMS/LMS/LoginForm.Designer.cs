@@ -33,7 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnContinue = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -94,16 +94,17 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "Admin Login";
             // 
-            // button1
+            // btnContinue
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(281, 200);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 31);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Continue";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnContinue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnContinue.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnContinue.Location = new System.Drawing.Point(281, 200);
+            this.btnContinue.Name = "btnContinue";
+            this.btnContinue.Size = new System.Drawing.Size(91, 31);
+            this.btnContinue.TabIndex = 10;
+            this.btnContinue.Text = "Continue";
+            this.btnContinue.UseVisualStyleBackColor = false;
+            this.btnContinue.Click += new System.EventHandler(this.BtnContinue_Click);
             // 
             // btnCancel
             // 
@@ -122,7 +123,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(457, 263);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnContinue);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPassword);
@@ -145,7 +146,7 @@
         private Label label1;
         private TextBox txtPassword;
         private Label label2;
-        private Button button1;
+        private Button btnContinue;
         private Button btnCancel;
     }
 }

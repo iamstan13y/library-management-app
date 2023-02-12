@@ -24,5 +24,12 @@ namespace LMS
             Db.Adapter.Fill(table);
             dgvBooks.DataSource = table;
         }
+
+        private void BtnAddNew_Click(object sender, EventArgs e)
+        {
+            BookModal modal = new();
+            modal.Show();
+            Close();
+        }
     }
 }

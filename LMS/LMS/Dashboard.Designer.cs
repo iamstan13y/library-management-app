@@ -139,7 +139,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(251, 254);
+            this.button1.Location = new System.Drawing.Point(308, 254);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(132, 80);
             this.button1.TabIndex = 13;
